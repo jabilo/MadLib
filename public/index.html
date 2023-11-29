@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mad Libs Game</title>
+</head>
+<body>
+    <div class="big-box">
+    <div class="container">
+        <h1>Mad Libs Game</h1>
+        <form id="madLibForm" action="/cs212/lab7" method="post">
+            <div>
+                <label for="noun">Noun:</label>
+                <input type="text" id="noun" name="noun" required>
+            </div>
+        
+            <div>
+                <label for="adjective">Adjective:</label>
+                <input type="text" id="adjective" name="adjective" required>
+            </div>
+        
+            <div>
+                <label for="verb">Verb:</label>
+                <input type="text" id="verb" name="verb" required>
+            </div>
+        
+            <div>
+                <label for="adverb">Adverb:</label>
+                <input type="text" id="adverb" name="adverb" required>
+            </div>
+        
+            <div>
+                <label for="place">Place:</label>
+                <input type="text" id="place" name="place" required>
+            </div>
+            
+            <button type="submit">Generate Mad Lib</button>
+        </form>
+        
+        </div>
+        <div id="result" class="hidden">
+            <h2>Your Mad Lib:</h2>
+            <p id="madLibResult"></p>
+        </div>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
